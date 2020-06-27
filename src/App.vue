@@ -2,6 +2,12 @@
   <div id="app">
     <Navbar id="navbar" />
     <router-view />
+    <footer class="page-footer font-small blue">
+      <div class="footer-copyright text-center py-3">
+        © 2020 Copyright:
+        <a href="https://mdbootstrap.com/"> Live Coding</a>
+      </div>
+    </footer>
   </div>
 </template>
 

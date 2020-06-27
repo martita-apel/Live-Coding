@@ -1,5 +1,11 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <img src="../assets/music.jpg" alt="Music" />
   </div>
 </template>
+
+<style scoped>
+img {
+  max-width: 100%;
+}
+</style>

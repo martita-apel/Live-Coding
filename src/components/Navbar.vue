@@ -13,16 +13,13 @@
               <b-form-input
                 size="sm"
                 class="mr-sm-2"
-                placeholder="Search"
+                placeholder="Buscar"
               ></b-form-input>
-              <b-button size="sm" class="my-2 my-sm-0" type="submit"
-                >Search</b-button
-              >
+              <b-button size="sm" class="my-2 my-sm-0 mr-2">Buscar</b-button>
             </b-nav-form>
 
             <b-navbar-nav>
-              <b-nav-item to="/about">About</b-nav-item>
-              <b-nav-item to="/login">Link</b-nav-item>
+              <b-nav-item to="/about">Acerca de</b-nav-item>
             </b-navbar-nav>
 
             <b-nav-item-dropdown right>

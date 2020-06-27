@@ -2,7 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
-import Course1 from "../views/Course1.vue";
+import Course from "../views/Course.vue";
 import NotFound from "../views/NotFound.vue";
 
 import firebase from "firebase";
@@ -17,16 +17,14 @@ const router = new VueRouter({
       path: "/",
       name: "Home",
       component: Home,
-      children: [
-        {
-          path: "/course1",
-          name: "Course1",
-          component: Course1,
-        },
-      ],
       meta: {
         login: true,
       },
+    },
+    {
+      path: "/course/:id",
+      name: "Course",
+      component: Course,
     },
     {
       path: "/login",

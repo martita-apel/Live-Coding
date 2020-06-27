@@ -11,7 +11,11 @@ function baseCourse() {
       name: "",
       image: "",
       description: "",
-      examples: [],
+      examples: {
+        title: "",
+        mp3: "",
+        description: "",
+      },
     },
   };
 }
@@ -28,6 +32,9 @@ export default new Vuex.Store({
     },
     GET_COURSES(state, courses) {
       state.courses = courses;
+    },
+    SET_COURSE(state, course) {
+      state.course = course;
     },
   },
   actions: {
@@ -50,6 +57,18 @@ export default new Vuex.Store({
         .then((response) => {
           console.log(response.data);
           commit("GET_COURSES", response.data);
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+    },
+    findCourse({ commit }, id) {
+      axios
+        .get(
+          `https://us-central1-live-coding-c73f8.cloudfunctions.net/courses/course/${id}`
+        )
+        .then((response) => {
+          commit("SET_COURSE", response.data);
         })
         .catch(function(error) {
           console.log(error);
