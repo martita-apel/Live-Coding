@@ -15,7 +15,7 @@ Live Coding music academy website, with available courses.
 Clone project:
 
 ```
-git clone https://github.com/martita-apel/Hanabi-Plants.git
+git clone https://github.com/martita-apel/Live-Coding.git
 ```
 
 Install dependencies:
