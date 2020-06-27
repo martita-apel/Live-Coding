@@ -13,8 +13,9 @@ function baseCourse() {
       description: "",
       examples: {
         title: "",
-        mp3: "",
+        subtitle: "",
         description: "",
+        mp3: "",
       },
     },
   };
