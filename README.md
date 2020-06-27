@@ -21,7 +21,7 @@ git clone https://github.com/martita-apel/Hanabi-Plants.git
 Install dependencies:
 
 ```
-cd proyecto-final
+cd live-coding
 npm install
 ```
 
