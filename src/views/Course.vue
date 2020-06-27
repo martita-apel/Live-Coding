@@ -3,12 +3,12 @@
     <b-row>
       <b-col cols="12" sm="6" md="4" v-for="c in courses" :key="c.id">
         <b-card
-          :title="c.data.examples.title"
-          :sub-title="c.data.examples.subtitle"
+          :title="c.examples.data.title"
+          :sub-title="c.examples.data.subtitle"
         >
-          <b-card-text>{{ c.data.examples.description }} </b-card-text>
+          <b-card-text>{{ c.examples.data.description }} </b-card-text>
 
-          <b-card-text>{{ c.data.examples.mp3 }}</b-card-text>
+          <b-card-text>{{ c.examples.data.mp3 }}</b-card-text>
         </b-card>
       </b-col>
     </b-row>

@@ -15,12 +15,12 @@
             {{ c.data.description }}
           </b-card-text>
 
-          <!-- <b-button to="/course/1" variant="warning" id="boton"
-            >Saber más</b-button
-          > -->
-          <b-button :to="`/course/${course.id}`" variant="warning" id="boton"
+          <b-button to="/course" variant="warning" id="boton"
             >Saber más</b-button
           >
+          <!-- <b-button :to="`/course/${course.id}`" variant="warning" id="boton"
+            >Saber más</b-button
+          > -->
         </b-card>
       </b-col>
     </b-row>
