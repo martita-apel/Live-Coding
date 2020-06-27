@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>hola</h1>
+    <h1>Cursos disponibles</h1>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sint
       corrupti sunt sed ducimus itaque eaque, accusantium est fuga inventore

@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import axios from "axios";
 
 Vue.use(Vuex);
 
@@ -25,6 +26,9 @@ export default new Vuex.Store({
     UPDATE_CURR_USER(state, user) {
       state.currentUser = user;
     },
+    GET_COURSES(state, courses) {
+      state.courses = courses;
+    },
   },
   actions: {
     updateUser({ commit }, user) {
@@ -36,6 +40,20 @@ export default new Vuex.Store({
           reject(e);
         }
       });
+    },
+    getCourses({ commit }) {
+      axios
+        .get(
+          "https://us-central1-live-coding-c73f8.cloudfunctions.net/courses/courses",
+          { headers: { "Content-type": "application/json" } }
+        )
+        .then((response) => {
+          console.log(response.data);
+          commit("GET_COURSES", response.data);
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
     },
   },
 });

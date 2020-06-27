@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
 import Course1 from "../views/Course1.vue";
+import NotFound from "../views/NotFound.vue";
 
 import firebase from "firebase";
 
@@ -37,6 +38,11 @@ const router = new VueRouter({
       name: "About",
       component: () =>
         import(/* webpackChunkName: "about" */ "../views/About.vue"),
+    },
+    {
+      path: "*",
+      name: "NotFound",
+      component: NotFound,
     },
   ],
 });
